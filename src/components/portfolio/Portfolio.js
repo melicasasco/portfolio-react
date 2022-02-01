@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./Portfolio.scss";
+import { BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 import {
 
   webPortfolio,
@@ -52,13 +55,17 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {data.map((d) => (
+          <a href={d.link} target='_blank'>
           <div className="item">
-            <img
-              src={d.img}
-              alt=""
-            />
+           
+              <img
+                src={d.img}
+                alt=""
+              />
+        
             <h3>{d.title}</h3>
           </div>
+          </a>
         ))}
       </div>
     </div>

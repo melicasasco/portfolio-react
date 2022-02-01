@@ -4,6 +4,7 @@ import SobreMi from './components/sobremi/Sobremi';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 import Menu from "./components/menu/Menu";
+import { BrowserRouter } from "react-router-dom";
 
 import './app.scss';
 import { useState } from 'react';
@@ -12,7 +13,7 @@ function App() {
 
   const [menuOpen, setMenuOpen] = useState (false);
   return (
-
+<BrowserRouter>
     <div className="app">
      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -24,6 +25,7 @@ function App() {
 
      </div>
     </div>
+    </BrowserRouter>
   );
 }
 
