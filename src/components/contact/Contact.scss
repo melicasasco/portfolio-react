@@ -4,7 +4,20 @@
   background-color: white;
   display: flex;
 
- @include mobile {
+  @media (min-width: 375px){
+  
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1024px){
+  
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+
+  @include mobile {
     flex-direction: column;
   }
 
@@ -34,6 +47,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+      
 
       input {
         width: 300px;
@@ -41,7 +55,7 @@
         font-size: 14px;
 
         @include mobile {
-        width: 200px;
+          width: 200px;
           height: 20px;
         }
       }

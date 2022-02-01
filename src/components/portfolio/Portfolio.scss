@@ -8,6 +8,23 @@
 
     h1 {
         font-size: 50px;
+
+        @media (min-width: 375px){
+            font-size: 3rem;
+            word-spacing: 2rem;;
+          }
+
+          @media (min-width: 768px){
+            font-size: 2rem;
+            word-spacing: 2rem;
+            margin: 1rem;
+          }
+          @media (min-width: 1024px){
+            font-size: 2rem;
+            margin: 1rem;
+            padding: 0;
+          }
+    
     }
 
     ul {
@@ -15,6 +32,14 @@
         padding: 0;
         list-style: none;
         display: flex;
+
+        @media (min-width: 768px){
+          padding: 1rem;
+          }
+
+          @media (min-width: 1024px){
+            padding: 0rem;
+            }
 
         @include mobile{
             margin: 10px 0;
@@ -30,6 +55,21 @@
             border-radius: 10px;
             cursor: pointer;
 
+            @media (min-width: 375px){
+                font-size: 2rem;
+                margin: 1.4rem;
+
+                @media (min-width: 768px){
+                    
+                    font-size: 2rem;
+                    margin: 1rem;
+
+                    @media (min-width: 1024px){
+                        font-size: 1rem;
+                        }
+                  }
+              }
+
             &.active {
                 background-color: $mainColor;
                 color: white;
@@ -43,9 +83,20 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        @media (min-width: 375px){
+           
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 1024px){
+                display: flex;
+                flex-direction: row;
+              }
+          }
 
         @include mobile{
             width: 100%;
+            flex-direction: column;
           }
 
         .item {
@@ -62,9 +113,18 @@
             transition: 1s;
             cursor: pointer;
 
+            @media (min-width: 375px){
+                margin-top: 5rem;
+                width: 15rem;
+                height: 15rem;
+                display: flex;
+                flex-direction: column;
+              }
+
             @include mobile{
                 width: 130px;
                 height: 100px;
+            
               }
 
             h3 {
@@ -72,6 +132,13 @@
                 color: crimson;
                 padding: 1rem;
                 font-size: 20px;
+
+                @media (min-width: 375px){
+                    position: absolute;
+                    color: crimson;
+                    padding: 1rem;
+                    font-size: 20px;
+                  }
             }
 
             img {

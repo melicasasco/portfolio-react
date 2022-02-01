@@ -24,7 +24,7 @@ export default function Contact() {
             (error) => {
               console.log(error.text);
             }
-          );
+          ); 
       };
 
     return (

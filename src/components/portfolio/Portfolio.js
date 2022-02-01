@@ -2,22 +2,24 @@ import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./Portfolio.scss";
 import {
-  uxPortfolio,
+
   webPortfolio,
+  uxPortfolio,
+
+
 } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("web");
   const [data, setData] = useState([]);
   const list = [
-
     {
       id: "web",
-      title: "WEB",
+      title: "Web",
     },
     {
       id: "ux",
-      title: "UX-UI",
+      title: "Ux/Ui",
     },
   ];
 
@@ -26,9 +28,10 @@ export default function Portfolio() {
       case "web":
         setData(webPortfolio);
         break;
-        case "ux":
-          setData(uxPortfolio);
-          break;
+      case "ux":
+        setData(uxPortfolio);
+        break;
+     
       default:
         setData(webPortfolio);
     }

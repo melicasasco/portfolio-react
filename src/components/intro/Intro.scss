@@ -4,10 +4,18 @@
   background-color: white;
   display: flex;
 
-   @include mobile{
-     flex-direction: column;
-     align-items: center;
-   }
+  @media (min-width: 375px){
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  @media (min-width: 1024px){
+    flex-direction: row;
+    align-items: center;
+  }
+
+  
 
   .left {
     flex: 0.5;
@@ -47,6 +55,13 @@
       flex-direction: column;
       justify-content: center;
 
+      @media (min-width: 375px){
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+      }
+
         @include mobile{
           padding-left: 0;
           align-items: center;
@@ -65,8 +80,11 @@
       }
       h3 {
         font-size: 30px;
-        font-size: 20px;
         color: crimson;
+
+        @include mobile{
+          font-size: 20px;
+        
          }
 
         span {
@@ -96,6 +114,10 @@
       img {
         width: 30px;
         animation: arrowBlink 2s infinite;
+
+        @media (min-width: 1024px){
+          display: none;
+        }
       }
 
       @keyframes arrowBlink {
@@ -104,4 +126,5 @@
         }
       }
     }
+  }
   }

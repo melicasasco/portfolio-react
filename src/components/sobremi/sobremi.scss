@@ -16,6 +16,7 @@
   
   .a-right {
     flex: 1;
+    padding: 2rem;
   }
   
   .a-card.bg {
@@ -38,7 +39,7 @@
     height: 100%;
     object-fit: cover;
   }
-  
+   
   .a-award-img {
     width: 120px;
     height: 120px;
@@ -51,14 +52,32 @@
   
   .a-sub {
     margin: 20px 0px;
+    font-size: 1.3rem;
   }
   
   .a-desc{
       font-weight: 300;
       line-height: 1.7rem;
-      text-align: justify;
+      text-align: left;
       color: rgb(41, 39, 39);
-      padding-right: 10rem;
+      padding-right: 1rem;
+
+      @media (min-width: 375px){
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2.4rem;
+        padding: 0;
+
+        @media (min-width: 768px){
+          font-size: 2rem;
+         }
+
+        @media (min-width: 1024px){
+         font-size: 1.5rem;
+        }
+      
+      }
   }
   
   .a-award{
