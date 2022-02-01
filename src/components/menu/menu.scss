@@ -27,21 +27,15 @@
     color: white;
     width: 60%;
 
-    
-    @media (min-width: 375px){
-      font-size: 2.5rem;
-      &:hover {
-        font-weight: 500;
-      }
-      
-    }
-
     li {
       margin-bottom: 25px;
       a {
         font-size: inherit;
         color: inherit;
         text-decoration: none;
+        @media (min-width: 375px){
+          font-size: 2.5rem;
+        }
       }
 
       &:hover {
