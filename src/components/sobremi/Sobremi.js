@@ -22,6 +22,7 @@ const SobreMi = () => {
           soy una persona <span style={{color: 'red'}}>organizada y con una gran motivación</span>, apasionada por el <b>diseño</b> y la <b>tecnología.</b><br></br><br></br> Como egresada en Artes, <span style={{color: 'red'}}>mi devoción por la pintura 
           y el diseño </span>me llevó a indagar sobre la materia en el ámbito digital. <br></br><br></br>
           Actualmente me encuentro trabajando como Frontend Developer en dos agencias de Argentina.
+         
           </p>
         
         </div>
