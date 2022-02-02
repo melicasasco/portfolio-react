@@ -19,10 +19,15 @@
         display: flex;
         justify-content: center;
          width:100vw;
+         flex-wrap: wrap;
 
         @media (min-width: 768px){
           padding: 1rem;
           margin: 1rem;
+          display: flex;
+          justify-content: center;
+          width:100vw;
+          flex-wrap: wrap;
           }
 
           @media (min-width: 1024px){
