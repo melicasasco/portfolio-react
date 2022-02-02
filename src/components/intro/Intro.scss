@@ -31,6 +31,24 @@
       justify-content: center;
       float: right;
 
+      @media (min-width: 375px){
+        margin-top: 6rem;
+        height: 60rem;
+        width: 60rem;
+
+        @media (min-width: 1024px){
+          width: 700px;
+      height: 500px;
+      margin-top: 0rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+         }
+ 
+       }
+
    
 
        @include mobile{
