@@ -9,8 +9,6 @@
     h1 {
         font-size: 50px;
 
-
-        
     }
 
     ul {
@@ -63,7 +61,7 @@
         }
     }
     .container {
-        width: 70%;
+        width: 100%;
         display: flex;
 
         align-items: center;
@@ -86,8 +84,8 @@
           }
 
         .item {
-            width: 220px;
-            height: 220px;
+            width: 420px;
+            height: 420px;
             border-radius: .5rem;
             box-shadow: 0 4px 25px rgba(107, 116, 121, 0.15);
             margin: 10px 20px;
@@ -101,12 +99,19 @@
 
             @media (min-width: 375px){
                 margin-top: 5rem;
+                width: 26rem;
+                height: 26rem;
+                display: flex;
+                flex-direction: column;
+              }
+
+              @media (min-width: 1024px){
+                margin-top: 5rem;
                 width: 15rem;
                 height: 15rem;
                 display: flex;
                 flex-direction: column;
               }
-
             @include mobile{
                 width: 130px;
                 height: 100px;

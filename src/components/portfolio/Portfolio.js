@@ -8,8 +8,10 @@ import {
 
   webPortfolio,
   uxPortfolio,
-
-
+  reactPortfolio,
+  reactNativePortfolio,
+  jsPortfolio,
+  
 } from "../../data";
 
 export default function Portfolio() {
@@ -18,11 +20,25 @@ export default function Portfolio() {
   const list = [
     {
       id: "web",
-      title: "Web",
+      title: "HTML/CSS",
     },
     {
       id: "ux",
-      title: "Ux/Ui",
+      title: "UX/UI",
+    },
+    {
+      id: "js",
+      title: "JAVASCRIPT",
+    },
+
+    {
+      id: "react",
+      title: "REACT JS",
+    },
+
+    {
+      id: "reactnative",
+      title: "REACT NATIVE",
     },
   ];
 
@@ -34,7 +50,16 @@ export default function Portfolio() {
       case "ux":
         setData(uxPortfolio);
         break;
-     
+        case "js":
+          setData(jsPortfolio);
+          break;
+          case "react":
+            setData(reactPortfolio);
+            break;
+            case "reactnative":
+              setData(reactNativePortfolio);
+              break;
+
       default:
         setData(webPortfolio);
     }
