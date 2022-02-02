@@ -28,7 +28,7 @@ export const uxPortfolio = [
       title: "App React Native | en proceso",
       link: "https://github.com/melicasasco/react-native-app",
       img:
-        "assets/olafurArnalds.png",
+        "assets/Mockupleschats5.png",
     },
   
   ];
@@ -50,7 +50,7 @@ export const uxPortfolio = [
     title: "Sitio Web | Galería de arte",
     link: "https://melicasasco.github.io/nexus/",
     img:
-      "assets/nexusJs.jpg",
+      "assets/nexus.jpg",
   },
   {
     id: 3,
