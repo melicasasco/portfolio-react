@@ -2,15 +2,29 @@ import './Contact.scss';
 import emailjs from "emailjs-com";
 import { useContext, useRef, useState } from "react";
 
+
+
 export default function Contact() {
     const formRef = useRef();
     const [done, setDone] = useState(false)
 
+const [name, setName] = useState("");
+const [subject, setSubject] = useState("")
+const [email, setEmail] = useState("");
+const [message, setMessage] = useState("")
 
-  
+   
     const handleSubmit = (e) => {
         e.preventDefault();
-        emailjs
+        console.log({name});
+        console.log({subject});
+        console.log({email});
+        console.log({message});
+        if (name==="" || email==="" || message==="") {
+          alert('Campo incompleto');
+        } 
+        else {
+          emailjs
           .sendForm(
             "service_9c2v0ot",
             "template_ojpt0op",
@@ -21,11 +35,15 @@ export default function Contact() {
             (result) => {
               console.log(result.text);
               setDone(true)
+              e.target.reset();
             },
             (error) => {
               console.log(error.text);
             }
           ); 
+          
+        }
+       
       };
 
     return (
@@ -36,10 +54,20 @@ export default function Contact() {
         <div className="right">
           <h2>Contacto</h2>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input  type="text" placeholder="Name" name="user_name" />
-            <input  type="text" placeholder="Subject" name="user_subject" />
-            <input type="text" placeholder="Email" name="user_email" />
-            <textarea rows="5" placeholder="Message" name="message" />
+            <input  type="text" placeholder="Name" name="user_name" 
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+             />
+            <input  type="text" placeholder="Subject" name="user_subject"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+            />
+            <input type="text" placeholder="Email" name="user_email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)} />
+            <textarea rows="5" placeholder="Message" name="message" 
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}/>
             <button>Submit</button>
             {done && "¡Gracias!"}
           </form>
