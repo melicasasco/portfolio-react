@@ -1,17 +1,13 @@
 import './sobremi.scss';
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
+
 
 const SobreMi = () => {
 
-  useEffect(() => {
-    AOS.init({duration: 2000});
-  }, []);
+
 
     return (
-      <div 
-      data-aos='fade-down'
+      <div
       className="a" id="sobremi">
         <div className="a-left">
           <div className="a-card">
