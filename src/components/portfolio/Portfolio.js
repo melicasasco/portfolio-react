@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./Portfolio.scss";
+import { motion } from "framer-motion"
 
 import {
 
@@ -66,7 +67,9 @@ export default function Portfolio() {
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
-      <ul>
+      <ul
+     
+      >
         {list.map((item) => (
           <PortfolioList
             title={item.title}
@@ -76,11 +79,14 @@ export default function Portfolio() {
           />
         ))}
       </ul>
-      <div className="container">
+      <div 
+     
+      
+      className="container">
         {data.map((d) => (
           <a href={d.link} target='_blank'>
-          <div className="item">
-           
+          <div
+          className="item">
               <img
                 src={d.img}
                 alt=""
