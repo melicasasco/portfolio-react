@@ -2,11 +2,17 @@
    
 import "./Topbar.scss";
 import { GitHub, LinkedIn } from "@material-ui/icons";
+import { motion } from "framer-motion"
 
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
-    <div className={"topbar " + (menuOpen && "active")}>
+    <motion.div 
+    initial={{ y: -250 }}
+    animate={{ y: -10 }}
+    transition= {{ delay: 0.2, type: 'spring', stiffness: 120 }}
+    
+    className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
@@ -33,6 +39,6 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
