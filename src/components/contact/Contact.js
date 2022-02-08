@@ -1,6 +1,7 @@
 import './Contact.scss';
 import emailjs from "emailjs-com";
 import { useContext, useRef, useState } from "react";
+import { motion } from "framer-motion"
 
 
 
@@ -68,7 +69,9 @@ const [message, setMessage] = useState("")
             <textarea rows="5" placeholder="Message" name="message" 
             value={message}
             onChange={(e) => setMessage(e.target.value)}/>
-            <button>Submit</button>
+            <motion.button
+            whileHover={{scale: 0.9}}
+            >Submit</motion.button>
             {done && "¡Gracias!"}
           </form>
         </div>

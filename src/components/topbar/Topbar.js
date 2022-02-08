@@ -18,18 +18,22 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <a href="#intro" className="logo">
             Melanie Casasco
           </a>
-          <div className="itemContainer">
+          <motion.div 
+            whileHover={{scale: 0.9}}
+          className="itemContainer">
             <a style={{textDecoration:'none'}} href="https://github.com/melicasasco">
               <GitHub className="icon" />
               <span>Github</span>
             </a>
-          </div>
-          <div className="itemContainer">
+          </motion.div>
+          <motion.div
+           whileHover={{scale: 0.9}}
+            className="itemContainer">
             <a href="https://www.linkedin.com/in/melanie-casasco/">
             <LinkedIn className="icon" />
             <span>LinkedIn</span>
             </a>
-          </div>
+          </motion.div>
         </div>
         <div className="right">
           <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>

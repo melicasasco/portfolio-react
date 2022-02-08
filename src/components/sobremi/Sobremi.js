@@ -1,13 +1,37 @@
 import './sobremi.scss';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 
 const SobreMi = () => {
 
+const {ref, inView } = useInView({
+  threshold: 0.2
+});
+const animation = useAnimation();
 
+
+
+useEffect(()=> {
+  console.log('use Effect hook, inView = ', inView);
+  if(inView) {
+    animation.start ({
+      x: 0,
+      transition: {
+        type: 'delay: 400, duration: 2000'
+      }
+
+    });
+  }
+  if(!inView) {
+    animation.start( {x: '80px'})
+  }
+
+}, [inView]);
 
     return (
-      <div
+      <div ref={ref}
       className="a" id="sobremi">
         <div className="a-left">
           <div className="a-card">
@@ -18,8 +42,8 @@ const SobreMi = () => {
             />
           </div>
         </div>
-        <div 
-
+        <motion.div 
+       animate={animation}
         className="a-right">
           <h1 className="a-title">Sobre mí</h1>
           <p className="a-sub">
@@ -32,8 +56,8 @@ const SobreMi = () => {
           Actualmente me encuentro trabajando como Frontend Developer en dos agencias de Argentina.
          
           </p>
-        
-        </div>
+          
+        </motion.div>
       </div>
     );
   };
