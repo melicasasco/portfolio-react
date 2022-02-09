@@ -1,18 +1,24 @@
 import './Contact.scss';
 import emailjs from "emailjs-com";
-import { useContext, useRef, useState } from "react";
+import { useContext, useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion"
 
 
 
-export default function Contact() {
+export default function Contact( { setShowModal }) {
+    useEffect(() => {
+      setTimeout(() => { 
+        setShowModal()
+      }, 5000)
+    }, [])
+
     const formRef = useRef();
     const [done, setDone] = useState(false)
 
-const [name, setName] = useState("");
-const [subject, setSubject] = useState("")
-const [email, setEmail] = useState("");
-const [message, setMessage] = useState("")
+    const [name, setName] = useState("");
+    const [subject, setSubject] = useState("")
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("")
 
    
     const handleSubmit = (e) => {
@@ -22,7 +28,7 @@ const [message, setMessage] = useState("")
         console.log({email});
         console.log({message});
         if (name==="" || email==="" || message==="") {
-          alert('Campo incompleto');
+         setShowModal(true);
         } 
         else {
           emailjs

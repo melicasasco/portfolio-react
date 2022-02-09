@@ -1,0 +1,67 @@
+button {
+    width: 150px;
+    height: 30px;
+    color: crimson;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+
+    @media (min-width: 375px){
+     width: 20%;
+     height: 10%;
+     font-size: 1.5rem;
+     margin-bottom: 1.3rem;
+
+     @media (min-width: 1024px){
+      width: 150px;
+      font-size: 1rem;
+      height: 30px;
+      color: crimson;
+      background-color: white;
+      border: none;
+      border-radius: 10px;
+      font-weight: 500;
+      margin: 2rem;
+      cursor: pointer;
+     }
+    }
+
+
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  span {
+    color: green;
+  }
+
+
+  p {
+        font-weight: 300;
+        line-height: 1.7rem;
+        text-align: center;
+        color: white;
+        padding-right: 1rem;
+  
+        @media (min-width: 375px){
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          line-height: 2.4rem;
+          padding: 0;
+  
+          @media (min-width: 768px){
+            font-size: 1rem;
+           }
+  
+          @media (min-width: 1024px){
+           font-size: 1.3rem;
+          }
+        
+        }
+    }
+  
