@@ -1,34 +1,40 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './modal.scss';
 
-const backdrop = {
-    visible: { opacity: 1 },
-    hidden: { opacity: 0}
-
-}
 
 
-const modal = {
-    hidden: {
-        y: '-100vh',
-        opacity: 0
-    },
-    vissible: {
-        y: '150px',
-        opacity: 1,
-        transition: { delay: 0.5}
+
+const Modal = ({ showModal, setShowModal }) => {
+
+       const backdrop = {
+        visible: { opacity: 1 },
+        hidden: { opacity: 0}
+    
     }
-}
+    
+    const modal = {
+        hidden: {
+            y: '-100vh',
+            opacity: 0
+        },
+        vissible: {
+            y: '150px',
+            opacity: 1,
+            transition: { delay: 0.5}
+        }
+    }
+    
+    
 
 
-
-
-const Modal = ({ showModal, setShowModal, handleClose }) => {
     return (
-        <AnimatePresence exitBeforeEnter> 
+        <AnimatePresence exitBeforeEnter > 
+          
             { showModal && (
-                <motion.div style={{
+                <motion.div 
+                  
+                    style={{
                     position: 'fixed',
                     top: 0,
                     left: 0,
@@ -40,6 +46,7 @@ const Modal = ({ showModal, setShowModal, handleClose }) => {
                    variants={backdrop}
                    initial='hidden'
                    animate={'visible'}
+   
                    >
                        <motion.div 
                         variants={modal}
