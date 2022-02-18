@@ -29,11 +29,11 @@ const Modal = ({ showModal, setShowModal }) => {
 
 
     return (
-        <AnimatePresence exitBeforeEnter > 
+        <AnimatePresence exitBeforeEnter> 
+        
           
             { showModal && (
                 <motion.div 
-                  
                     style={{
                     position: 'fixed',
                     top: 0,
@@ -49,6 +49,7 @@ const Modal = ({ showModal, setShowModal }) => {
    
                    >
                        <motion.div 
+                       className="modalMobile"
                         variants={modal}
                         initial='hidden'
                         animate='vissible'

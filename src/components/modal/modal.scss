@@ -14,6 +14,8 @@ button {
      font-size: 1.5rem;
      margin-bottom: 1.3rem;
      margin: 2rem;
+     
+    
 
      @media (min-width: 1024px){
       width: 150px;
@@ -26,6 +28,7 @@ button {
       font-weight: 500;
       margin: 2rem;
       cursor: pointer;
+      
      }
     }
 
@@ -41,18 +44,19 @@ button {
         font-weight: 300;
         line-height: 1.7rem;
         padding-right: 1rem;
-        
+
   
         @media (min-width: 375px){
           justify-content: center;
           flex-direction: column;
           align-items: center;
           line-height: 2.4rem;
+          font-size: 2.3rem;
           padding: 0;
  
           @media (min-width: 768px){
-            font-size: 1.7rem;
-
+            font-size: 2.4rem;
+           
            }
   
           @media (min-width: 1024px){
@@ -63,3 +67,16 @@ button {
         }
     }
   
+   @media (min-width: 768px){
+    .modalMobile{
+      margin-top: 40% !important;
+
+
+      @media (min-width: 1024px){
+           margin-top: 0% !important;
+        
+       }
+    
+    }  
+     
+     }

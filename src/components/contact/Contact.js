@@ -1,8 +1,7 @@
 import './Contact.scss';
 import emailjs from "emailjs-com";
-import { useRef, useState, useEffect } from "react";
+import { useContext, useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useForm } from "react-hook-form";
 
 
 export default function Contact( { setShowModal }) {
