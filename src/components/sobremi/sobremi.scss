@@ -60,17 +60,17 @@
       line-height: 1.7rem;
       text-align: left;
       color: rgb(41, 39, 39);
-      padding-right: 1rem;
+      padding-right: 2rem;
 
       @media (min-width: 375px){
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        line-height: 2.4rem;
+        line-height: 1.7rem;
         padding: 0;
 
         @media (min-width: 768px){
-          font-size: 1rem;
+          font-size: 1.5rem;
          }
 
         @media (min-width: 1024px){

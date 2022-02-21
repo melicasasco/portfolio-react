@@ -41,7 +41,7 @@ export default function Intro() {
             <h1 
             >Soy Meli</h1>
             <h3>
-              Jr <span ref={textRef}></span>
+              <span ref={textRef}></span>
             </h3>
           </motion.div>
           <a href="#portfolio">
