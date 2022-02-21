@@ -21,7 +21,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <motion.div 
             whileHover={{scale: 0.9}}
           className="itemContainer">
-            <a style={{textDecoration:'none'}} href="https://github.com/melicasasco">
+            <a style={{textDecoration:'none'}} href="https://github.com/melicasasco" target='_blank'>
               <GitHub className="icon" />
               <span>Github</span>
             </a>
@@ -29,7 +29,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <motion.div
            whileHover={{scale: 0.9}}
             className="itemContainer">
-            <a href="https://www.linkedin.com/in/melanie-casasco/">
+            <a href="https://www.linkedin.com/in/melanie-casasco/" target='_blank'>
             <LinkedIn className="icon" />
             <span>LinkedIn</span>
             </a>
