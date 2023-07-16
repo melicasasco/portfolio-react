@@ -22,11 +22,13 @@
     align-items: center;
   }
 
-  @media (min-width: 375px){
+  @media (max-width: 375px){
     .contact-links {
       font-size: 1.8rem;
     }
   }
+
+
 /* 
 .contact {
   background-color: white;

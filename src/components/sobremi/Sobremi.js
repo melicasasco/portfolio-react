@@ -46,9 +46,9 @@ useEffect(()=> {
           animate={animation}
           className="a-right">
           <h1 className="a-title">Sobre mí</h1>
-          <p className="a-sub">
+          {/* <p className="a-sub">
             Me dicen Meli,
-          </p>
+          </p> */}
           <p 
           className="a-desc">
           soy una persona <span style={{color: 'rgb(105, 202, 202)'}}>organizada y con una gran motivación</span>, apasionada por el <b>diseño</b> y la <b>tecnología.</b><br></br> Como egresada en Artes, <span style={{color: 'rgb(105, 202, 202)'}}>mi devoción por la pintura 
