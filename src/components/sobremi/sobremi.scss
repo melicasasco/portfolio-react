@@ -55,6 +55,9 @@
     font-weight: 400;
     padding-bottom: 20px;
     color: #ffffff;
+    @media (min-width: 375px){
+      font-size: 3rem;
+    }
   }
   
   .a-sub {

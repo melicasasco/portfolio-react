@@ -6,6 +6,13 @@
   flex-direction: column;
   align-items: center;
 
+  a{
+
+    @media (max-width: 375px){
+      font-size: 1.5rem;
+    }
+  }
+
   h1 {
       color: #ffffff;
       width:100%;
@@ -22,11 +29,6 @@
     align-items: center;
   }
 
-  @media (max-width: 375px){
-    .contact-links {
-      font-size: 1.8rem;
-    }
-  }
 
 
 /* 
