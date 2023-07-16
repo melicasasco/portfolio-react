@@ -43,8 +43,8 @@ useEffect(()=> {
           </div>
         </div>
         <motion.div 
-       animate={animation}
-        className="a-right">
+          animate={animation}
+          className="a-right">
           <h1 className="a-title">Sobre mí</h1>
           <p className="a-sub">
             Me dicen Meli,
