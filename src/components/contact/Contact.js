@@ -64,16 +64,17 @@ export default function Contact({ setShowModal }) {
           <span>
             <a
             className="contact-links"
-              href="mailto: melanie@gmail.com"
+              href="mailto: melaniecasasco@gmail.com"
               target="_blank"
               rel="noreferrer"
               style={{
                 textDecoration: "none",
+                fontSize: "1.3rem",
                 color: "white",
                 paddingLeft: "10px",
               }}
             >
-              melanie@gmail.com
+              melaniecasasco@gmail.com
             </a>{" "}
           </span>
           <p style={{ padding: "0px 0 50px 0" }}></p>
@@ -96,6 +97,7 @@ export default function Contact({ setShowModal }) {
               style={{
                 textDecoration: "none",
                 color: "white",
+                fontSize: "1.3rem",
                 paddingLeft: "10px",
               }}
             >
