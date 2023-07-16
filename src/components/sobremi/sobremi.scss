@@ -1,5 +1,5 @@
 .a {
-    background-color: white;
+    background-color: #222;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -48,18 +48,21 @@
   
   .a-title {
     font-weight: 400;
+    color: #ffffff;
   }
   
   .a-sub {
     margin: 20px 0px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    color: #ffffff;
   }
   
   .a-desc{
       font-weight: 300;
       line-height: 1.7rem;
       text-align: left;
-      color: rgb(41, 39, 39);
+      color: #ffffff;
+      font-size: 1.1rem;
       padding-right: 1rem;
 
       @media (min-width: 375px){
@@ -74,7 +77,7 @@
          }
 
         @media (min-width: 1024px){
-         font-size: 1.3rem;
+         font-size: 1.1rem;
         }
       
       }

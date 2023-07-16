@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: white;
+  background-color: #222;
   display: flex;
 
   @media (min-width: 375px){
@@ -93,6 +93,7 @@
       h1 {
         font-size: 60px;
         margin: 10px 0;
+        color: white;
 
         @media (min-width: 375px){
         font-size: 5rem;
@@ -109,6 +110,7 @@
       }
       h2 {
         font-size: 35px;
+        color: white;
         @media (min-width: 375px){
           font-size: 3rem;
 
@@ -119,7 +121,7 @@
       }
       h3 {
         font-size: 30px;
-        color: crimson;
+        color: white;
         @media (min-width: 375px){
           font-size: 2.5rem;
 
@@ -135,7 +137,7 @@
 
         span {
           font-size: inherit;
-          color: crimson;
+          color: rgb(105, 202, 202);
         }
 
         .ityped-cursor {

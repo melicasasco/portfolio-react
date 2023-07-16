@@ -58,7 +58,7 @@ const Modal = ({ showModal, setShowModal }) => {
                            style={{
                            width: 'clamp(50%, 700px, 90%)',
                            height: 'min(50% 300px)',
-                           background: 'crimson',
+                           background: 'rgb(105, 202, 202)',
                            margin: ' auto',
                            padding: '0 2rem',
                            borderRadius: '12px',
