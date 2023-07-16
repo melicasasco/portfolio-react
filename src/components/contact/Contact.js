@@ -63,6 +63,7 @@ export default function Contact({ setShowModal }) {
           <Email className="icon" style={{ color: "white" }} />
           <span>
             <a
+            className="contact-links"
               href="mailto: melanie@gmail.com"
               target="_blank"
               rel="noreferrer"
@@ -88,6 +89,7 @@ export default function Contact({ setShowModal }) {
           <LinkedIn className="icon" style={{ color: "white" }} />
           <span>
             <a
+            className="contact-links"
               href="https://www.linkedin.com/in/melanie-casasco/"
               target="_blank"
               rel="noreferrer"
